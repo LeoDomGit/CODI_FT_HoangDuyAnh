@@ -15,7 +15,7 @@
         $("#loginBtn").click(function (e) {
           e.preventDefault();
           $("#loginModal").modal("show");
-          $("#submit").click(function (e) {
+          $("#submitloginBtn").click(function (e) {
             e.preventDefault();
             var emailaddress = $("#email").val().trim();
             if (email==""){
@@ -83,7 +83,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link loginBtn" href="#">Login</a>
+              <a class="nav-link " id="loginBtn" href="#">Login</a>
             </li>
           </ul>
           <form class="d-flex">
