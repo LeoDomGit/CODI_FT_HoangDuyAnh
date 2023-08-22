@@ -252,7 +252,7 @@ function loadDataNavbar() {
 }
 //------------------------------------------------------------------------------------
 function owl() {
-  $('.owl-carousel').owlCarousel({
+  $('#owl').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -264,11 +264,32 @@ function owl() {
             items:3
         },
         1000:{
-            items:2.5
+            items:5
         }
     }
 })
 $('#sameCateProducts').owlCarousel({
+  loop:true,
+  margin:12,
+  responsiveClass:true,
+  items:6,
+  responsive:{
+    0:{
+      items:1,
+      nav:true
+  },
+  600:{
+      items:3,
+      nav:false
+  },
+  1000:{
+      items:2,
+      nav:true,
+      loop:false
+      }
+  }
+})
+$('#sameBrandProducts').owlCarousel({
   loop:true,
   margin:10,
   responsiveClass:true,
@@ -283,7 +304,7 @@ $('#sameCateProducts').owlCarousel({
       nav:false
   },
   1000:{
-      items:5,
+      items:2,
       nav:true,
       loop:false
       }
