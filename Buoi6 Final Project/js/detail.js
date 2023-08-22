@@ -278,15 +278,10 @@ $('#sameCateProducts').owlCarousel({
       items:1,
       nav:true
   },
-  600:{
-      items:3,
-      nav:false
-  },
   1000:{
       items:2,
-      nav:true,
-      loop:false
-      }
+      nav:false
+  },
   }
 })
 $('#sameBrandProducts').owlCarousel({
@@ -299,15 +294,10 @@ $('#sameBrandProducts').owlCarousel({
       items:1,
       nav:true
   },
-  600:{
-      items:3,
-      nav:false
-  },
   1000:{
       items:2,
-      nav:true,
-      loop:false
-      }
+      nav:false
+  },
   }
 })
 }
